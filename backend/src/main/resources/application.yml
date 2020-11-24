@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 574377124871-ta9h17a6hvfu833atfh8jcgenfkq3qnk.apps.googleusercontent.com
+            client-secret: UsYZHjGjOJ-eUAIMq8_mmDpp
+
+  data:
+    rest:
+      base-path: /api
+
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    # Change this as soon as possible
+    url: jdbc:oracle:thin:@localhost:1522:orbis
+    username: s264470
+    password: npo508
