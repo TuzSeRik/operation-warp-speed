@@ -11,6 +11,10 @@ spring:
     rest:
       base-path: /api
 
+  jpa:
+    hibernate:
+      ddl-auto: create
+
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
     # Change this as soon as possible
