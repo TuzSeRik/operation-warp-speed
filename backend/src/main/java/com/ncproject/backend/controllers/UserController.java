@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RestController
 @CrossOrigin(origins = "*")
 public class UserController {
-    @GetMapping("/hello")
-    public String register() {
-        return "Hello, World!";
+    @GetMapping("/helloThere")
+    String helloThere() {
+        return "This isn't endpoint you're looking for";
     }
 }

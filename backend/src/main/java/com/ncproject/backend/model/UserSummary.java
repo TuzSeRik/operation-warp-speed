@@ -11,11 +11,11 @@ import java.util.UUID;
 import java.time.Instant;
 
 @Entity
-@Table(name = "USERS")
+@Table(name = "USER_SUMMARIES")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class UserSummary {
     @Id
     @GeneratedValue
     private UUID id;
@@ -25,4 +25,5 @@ public class User {
     private String profilePicture;
     private String accessToken;
     private Instant expiresAt;
+    private Instant lastSynchronisation;
 }

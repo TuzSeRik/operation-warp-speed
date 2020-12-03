@@ -6,6 +6,9 @@ spring:
           google:
             client-id: 574377124871-ta9h17a6hvfu833atfh8jcgenfkq3qnk.apps.googleusercontent.com
             client-secret: UsYZHjGjOJ-eUAIMq8_mmDpp
+            scope: https://www.googleapis.com/auth/userinfo.email,
+                   https://www.googleapis.com/auth/userinfo.profile,
+                   https://www.googleapis.com/auth/calendar.events
 
   data:
     rest:
@@ -17,7 +20,7 @@ spring:
 
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
-    # Change this as soon as possible
+    # Change this as soon as possible (not works online, only with local ssh tunnel to Helios)
     url: jdbc:oracle:thin:@localhost:1522:orbis
     username: s264470
     password: npo508

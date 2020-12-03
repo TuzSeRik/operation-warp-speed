@@ -1,9 +1,8 @@
+.idea/
+.mvn/
 target/
 build/
-.mvn/
-.idea/
 
-HELP.md
+*.iml
 mvnw
 mvnw.cmd
-*.iml

@@ -10,7 +10,8 @@ import com.ncproject.backend.services.LocallyCopyingOidcUserService;
 @Configuration
 @AllArgsConstructor
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
-    private final LocallyCopyingOidcUserService oidcService;
+    private final LocallyCopyingOidcUserService oidcUserService;
+    private final OAuth2AuthenticationSuccessHandler oAuth2AuthenticationSuccessHandler;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -20,7 +21,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatcher("/**").authorizeRequests()
                 .antMatchers("/").permitAll()
                 .anyRequest().authenticated()
-                .and().oauth2Login()
-                .userInfoEndpoint().oidcUserService(oidcService);
+                .and().oauth2Login().successHandler(oAuth2AuthenticationSuccessHandler)
+                .userInfoEndpoint().oidcUserService(oidcUserService);
     }
 }
