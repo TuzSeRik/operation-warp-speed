@@ -1,0 +1,16 @@
+/* Если хватит времени, перенести эти стили в JSS */
+.Footer {
+    display: table;
+    width: 98.7vw;
+    height: 150px;
+    margin: auto;
+    color: white;
+    text-align: center;
+    background-color: grey;
+    border-radius: 10px 10px 0 0;
+}
+
+.Footer h3 {
+    display: table-cell;
+    vertical-align: middle;
+}

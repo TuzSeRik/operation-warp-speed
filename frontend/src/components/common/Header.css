@@ -1,0 +1,17 @@
+/* Если хватит времени, перенести эти стили в JSS */
+.Header {
+    display: table;
+    width: 98.7vw;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+}
+
+.Header h3 {
+    display: table-cell;
+    vertical-align: middle;
+}

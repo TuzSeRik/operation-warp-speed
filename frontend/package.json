@@ -1,0 +1,63 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "description": "A frontend for a toMeet project application",
+  "homepage": "",
+  "bugs": {},
+  "license": "",
+  "author": {},
+  "contributors": [],
+  "scripts": {
+    "compile": "tsc",
+    "prepare": "yarn run compile",
+    "start": "react-scripts start",
+    "pretest": "yarn run compile",
+    "test": "react-scripts test",
+    "posttest": "yarn run lint",
+    "build": "react-scripts build",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "fix": "gts fix"
+  },
+  "dependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-router-dom": "latest",
+    "@types/history": "latest",
+    "@types/react-redux": "latest",
+    "@types/bootstrap": "latest",
+    "@types/react-bootstrap": "latest",
+    "typescript": "latest",
+    "gts": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-scripts": "latest",
+    "react-router-dom": "latest",
+    "history": "latest",
+    "redux": "latest",
+    "react-redux": "latest",
+    "redux-thunk": "latest",
+    "redux-devtools-extension": "latest",
+    "bootstrap": "latest",
+    "react-bootstrap": "latest",
+    "react-google-button": "latest"
+  },
+  "private": true,
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version"
+    ]
+  }
+}
