@@ -8,4 +8,5 @@ public interface UserSummaryRepository extends JpaRepository<UserSummary, UUID> 
     boolean existsByEmail(String email);
     UserSummary getByEmail(String email);
     UserSummary getByAccessToken(String accessToken);
+
 }

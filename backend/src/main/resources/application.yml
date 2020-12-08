@@ -16,7 +16,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: create-drop
 
   datasource:
     driver-class-name: oracle.jdbc.driver.OracleDriver
