@@ -1,7 +1,7 @@
 import {createSlice, Dispatch} from '@reduxjs/toolkit';
 // Reducers
 const redirectionSlice = createSlice({
-  name: 'authorisation',
+  name: 'redirection',
   initialState: {
     isAuthorised: false,
   },
@@ -14,9 +14,11 @@ const redirectionSlice = createSlice({
     },
   },
 });
+
 export const redirectionReducer = redirectionSlice.reducer;
 // Actions
 const {loginSuccess, loginFailure} = redirectionSlice.actions;
+
 export const redirection = (response: string) => (dispatch: Dispatch) => {
   if (response === '?status=ok') {
     dispatch(loginSuccess(true));
