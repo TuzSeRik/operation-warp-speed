@@ -1,7 +1,7 @@
 import React from 'react';
 import {Col, Container, Row} from 'react-bootstrap';
-import {Advertisement} from './Advertisement';
-import {Login} from './Login';
+import {Advertisement} from '../../commonComponents/Advertisement/Advertisement';
+import {Login} from '../Login/Login';
 
 export function Authorisation() {
   return (

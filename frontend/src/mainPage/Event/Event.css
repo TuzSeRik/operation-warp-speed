@@ -1,0 +1,15 @@
+.Event {
+    padding: 25px;
+    margin: 10px;
+    background-color: pink;
+    border: 1px solid red;
+    border-radius: 25px;
+}
+
+.EventRow, .EventCol {
+    border: 1px solid black;
+}
+
+.EventTitle {
+    font-weight: bold;
+}

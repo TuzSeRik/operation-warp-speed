@@ -1,12 +1,42 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "description": "A frontend for a toMeet project application",
+  "description": "A frontend part of the JustMeet application",
+  "keywords": [],
   "homepage": "",
-  "bugs": {},
+  "bugs": {
+    "url" : "",
+    "email" : ""
+  },
   "license": "",
-  "author": {},
-  "contributors": [],
+  "author": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "contributors": [
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    },
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    },
+    {
+      "name": "",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "browser": "./src/index.tsx",
+  "repository": {
+    "type": "",
+    "url": "",
+    "directory": ""
+  },
   "scripts": {
     "compile": "tsc",
     "prepare": "yarn run compile",
@@ -37,27 +67,28 @@
     "history": "latest",
     "redux": "latest",
     "react-redux": "latest",
-    "redux-thunk": "latest",
-    "redux-devtools-extension": "latest",
+    "@reduxjs/toolkit": "latest",
     "bootstrap": "latest",
     "react-bootstrap": "latest",
     "react-google-button": "latest"
   },
+  "engines": {
+    "node": ">=14.4.0"
+  },
   "private": true,
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">=0.2%",
       "not dead",
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version"
+      "last 5 chrome version"
     ]
   }
 }
